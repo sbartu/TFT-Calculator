@@ -1,7 +1,7 @@
 import champions from './json/champions.json'
 import classes from './json/classes.json'
 import items from './json/items.json'
-import origins from './json/origins.json'
+import originsJSON from './json/origins.json'
 
 
 var CalcView = new Vue({
@@ -11,6 +11,7 @@ var CalcView = new Vue({
     champions: [],
     price_min: 0,
     price_max: 0,
+    origins: originsJSON,
   },
   methods: {
     search(e) {
